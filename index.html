@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sehjal Saxena</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showeducation()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Sehjal Saxena</h1>
+        <h2>Upcoming GFX Designer / Gamer / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">About</a>
+            <a onclick="showeducation()">My Education</a>
+            <a onclick="showcontact()">Contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-github"></i></a>sehjalxd</td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a>sehjal.xd</td>
+                </tr>
+        </table>
+    </div>
+    <div id="education_container" class="container">
+        <div onclick="closeeducation()"><i class="fas fa-angle-right"></i></div>
+        <h1>my education.</h1>
+        <section>
+            <h2>My Education</h2>
+            <p>
+                Currently I am not working at any place, So I am a Student of 8th Standard and I am currently Studying in Haryana, india. Some of my hobbies are shown below :)
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Drawing</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Gaming</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Editing</div>
+            </div>
+            <button class="btn_one">Cool!</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Hey! My name is Sehjal Saxena and I am from India. I am a Student of 8th Standard. My Dream is to be Proffesional GFX Designer.
+                </p>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <p>
+                    I Can do Gaming and a lil bit of Editing, haha.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made by sehjal <br> <a href="https://github.com/sehjalxd">sehjalxd</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
